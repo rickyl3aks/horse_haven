@@ -1,0 +1,20 @@
+{
+  "horse_breed": [
+    {
+      "id": 1,
+      "name": "Appaloosa",
+      "img": "../img/appaloosa.png",
+      "country": "United States 🇺🇸",
+      "weight": "14.2 hands to 16 hands",
+      "body_type": "Compact, muscular build",
+      "life_expectancy": 30,
+      "colour": {
+        "Blanket": ["#ebe9e4", "#30302f"],
+        "Leopard": ["#ebe9e4", "#30302f"],
+        "Snowflake": ["#ebe9e4", "#30302f"],
+        "Marble/Varnish": ["#ebe9e4", "#30302f"]
+      },
+      "personality": "The Appaloosa is independent, intelligent, and courageous. It can also be fierce -- making it an ideal war horse in the past. Currently, it is considered one of the best riding horses, especially for those who know how to handle horses."
+    }
+  ]
+}
