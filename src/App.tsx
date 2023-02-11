@@ -3,17 +3,18 @@ import horse from "./api/horseApi.json";
 import { horseType } from "./customType/type";
 import { useState } from "react";
 
-const App = () => {
+const App = ({ displayHorse }: any) => {
   const images: any = {
-    appaloosa: require("./img/appaloosa.png"),
+    "appaloosa": require("./img/appaloosa.png"),
+    "arabian": require("./img/arabian.jpeg"),
+    "thoroughbred": require("./img/thoroughbred.jpeg"),
+    "american paint": require("./img/american_paint.jpeg"),
   };
   const [expanded, setExpanded] = useState(false);
 
-  const horseBreed: any = horse.horse_breed;
-
   return (
     <div className="App">
-      {horseBreed.map((items: horseType) => {
+      {displayHorse.map((items: horseType) => {
         if (items.name) {
           return (
             <div key={items.id} className={style.flex}>

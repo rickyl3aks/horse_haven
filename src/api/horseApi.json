@@ -15,6 +15,54 @@
         "Marble/Varnish": ["#ebe9e4", "#30302f"]
       },
       "personality": "The Appaloosa is independent, intelligent, and courageous. It can also be fierce -- making it an ideal war horse in the past. Currently, it is considered one of the best riding horses, especially for those who know how to handle horses."
+    },
+    {
+      "id": 2,
+      "name": "thoroughbred",
+      "img": "../img/thoroughbred.jpeg",
+      "country": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "weight": "15 hands (60 inches) to 17 hands (68 inches)",
+      "body_type": "Deep chest; lean, athletic build; long neck; powerful hindquarters",
+      "life_expectancy": 25,
+      "colour": {
+        "Blanket": ["#ebe9e4", "#30302f"],
+        "Leopard": ["#ebe9e4", "#30302f"],
+        "Snowflake": ["#ebe9e4", "#30302f"],
+        "Marble/Varnish": ["#ebe9e4", "#30302f"]
+      },
+      "personality": "As a breed, Thoroughbred horses are intelligent and energetic, with a strong work ethic. They can also be bold and spirited, making them better suited to a more experienced equestrian rather than a beginner."
+    },
+    {
+      "id": 3,
+      "name": "arabian",
+      "img": "../img/arabian.jpeg",
+      "country": "Arabian peninsula 🇦🇪",
+      "weight": "14.1 to 15.1 hands",
+      "body_type": "Lithe, compact body; small, wedge-shaped head; dished facial profile, long, arched neck",
+      "life_expectancy": 25,
+      "colour": {
+        "Blanket": ["#ebe9e4", "#30302f"],
+        "Leopard": ["#ebe9e4", "#30302f"],
+        "Snowflake": ["#ebe9e4", "#30302f"],
+        "Marble/Varnish": ["#ebe9e4", "#30302f"]
+      },
+      "personality": "The Arab is very intelligent. A quick learner with high spirits, it makes for a great riding horse. However, the Arab has been known to become aggressive if and when it is mistreated by its handler."
+    },
+    {
+      "id": 4,
+      "name": "american paint",
+      "img": "../img/american_paint.jpeg",
+      "country": "United States 🇺🇸",
+      "weight": "14 hands to 16 hands",
+      "body_type": "Strong, well-balanced body; colorful coat patterns; powerful hindquarters",
+      "life_expectancy": 30,
+      "colour": {
+        "Blanket": ["#ebe9e4", "#30302f"],
+        "Leopard": ["#ebe9e4", "#30302f"],
+        "Snowflake": ["#ebe9e4", "#30302f"],
+        "Marble/Varnish": ["#ebe9e4", "#30302f"]
+      },
+      "personality": "Beyond their beauty, paints are prized for their friendly, easygoing temperament. These are relaxed and highly social horses with natural intelligence that makes them unchallenging and rewarding to train."
     }
   ]
 }
