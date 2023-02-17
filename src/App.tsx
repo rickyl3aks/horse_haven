@@ -1,20 +1,19 @@
 import style from "./app.module.css";
-import horse from "./api/horseApi.json";
-import { horseType } from "./customType/type";
+import { HorseBreed, horseType } from "./customType/type";
 import { useState } from "react";
 
 const App = ({ displayHorse }: any) => {
   const images: any = {
-    "appaloosa": require("./img/appaloosa.png"),
-    "arabian": require("./img/arabian.jpeg"),
-    "thoroughbred": require("./img/thoroughbred.jpeg"),
+    appaloosa: require("./img/appaloosa.png"),
+    arabian: require("./img/arabian.jpeg"),
+    thoroughbred: require("./img/thoroughbred.jpeg"),
     "american paint": require("./img/american_paint.jpeg"),
   };
   const [expanded, setExpanded] = useState(false);
 
   return (
     <div className="App">
-      {displayHorse.map((items: horseType) => {
+      {displayHorse.map((items: HorseBreed) => {
         if (items.name) {
           return (
             <div key={items.id} className={style.flex}>

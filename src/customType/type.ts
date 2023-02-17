@@ -27,6 +27,7 @@ export interface HorseBreed {
   weight: string;
   body_type: string;
   life_expectancy: number;
+  personality: string;
   colour: Colour;
 }
 
