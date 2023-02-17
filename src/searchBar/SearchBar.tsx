@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import style from "./searchbar.module.css";
 import horse from "../api/horseApi.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import App from "../App";
 
 interface Suggestion {
@@ -14,17 +16,13 @@ const suggestions: Suggestion[] = horseNames;
 
 export const SearchBar: React.FC = () => {
   const [query, setQuery] = useState("");
+  const [lastQuery, setLastQuery] = useState("");
   const [filteredSuggestions, setFilteredSuggestions] = useState<Suggestion[]>(
     []
   );
   const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [selectedData, setSelectedData] = useState<any[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, []);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
@@ -37,7 +35,9 @@ export const SearchBar: React.FC = () => {
   };
 
   const handleSuggestionClick = (suggestion: Suggestion) => {
+    setSelectedData([...selectedData, suggestion]);
     setQuery(suggestion.name);
+    setLastQuery(query);
     setFilteredSuggestions([]);
     setSelectedIndex(-1);
   };
@@ -52,11 +52,19 @@ export const SearchBar: React.FC = () => {
       event.preventDefault();
       setSelectedIndex(Math.max(selectedIndex - 1, 0));
     } else if (event.key === "Enter" && selectedIndex !== -1) {
+      event.preventDefault();
       handleSuggestionClick(filteredSuggestions[selectedIndex]);
+    }
+    if (query === "") {
+      setSelectedData([]);
     }
   };
 
-  const display = horseBreed.filter((n: any) => n.name === query);
+  const displayHorse = horseBreed.filter(
+    (n: any) => n.name === query || n.name.startsWith(query)
+  );
+
+  console.log(displayHorse);
 
   return (
     <div>
@@ -87,10 +95,17 @@ export const SearchBar: React.FC = () => {
               ))}
             </ul>
           )}
-          <button type="submit" className={style.searchButton}></button>
+          <button type="submit" className={style.searchButton}>
+            <FontAwesomeIcon icon={faSearch} />
+          </button>
         </form>
       </div>
-      {display.length > 0 && <App displayHorse={display} />}
+      {selectedData.length > 0 && (
+        <App
+          displayHorse={displayHorse}
+          key={displayHorse.map((e: any) => e.id)}
+        />
+      )}
     </div>
   );
 };

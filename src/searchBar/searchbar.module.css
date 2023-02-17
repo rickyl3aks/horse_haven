@@ -1,9 +1,17 @@
 .container {
-  justify-content: center;
-  margin-top: 0.5rem;
-  width: 100%;
   position: relative;
-  display: flex;
+}
+
+.suggestionsList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: auto; /* right: 0; */
+  background-color: white;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 input {
@@ -16,29 +24,38 @@ input {
   outline: none;
 }
 
-.searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00b4cc;
-  background: #00b4cc;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.suggestionsList {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  border-radius: 0.2rem 0rem;
-  position: absolute;
+input {
+  height: 30px;
+}
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.searchButton {
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 .suggestionItem {
-  cursor: pointer;
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .suggestion {
