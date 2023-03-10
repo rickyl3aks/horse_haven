@@ -1,17 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
-import { SearchBar } from "./searchBar/SearchBar";
+import Icon from "./icon/Icon";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <SearchBar />
+    <Icon />
   </React.StrictMode>
 );
 serviceWorkerRegistration.register();

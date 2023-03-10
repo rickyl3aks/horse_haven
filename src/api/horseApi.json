@@ -2,7 +2,7 @@
   "horse_breed": [
     {
       "id": 1,
-      "name": "Appaloosa",
+      "name": "appaloosa",
       "img": "../img/appaloosa.png",
       "country": "United States 🇺🇸",
       "weight": "14.2 hands to 16 hands",
@@ -19,7 +19,7 @@
     {
       "id": 2,
       "name": "thoroughbred",
-      "img": "../img/thoroughbred.jpeg",
+      "img": "../img/thoroughbred.jpg",
       "country": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "weight": "15 hands (60 inches) to 17 hands (68 inches)",
       "body_type": "Deep chest; lean, athletic build; long neck; powerful hindquarters",
