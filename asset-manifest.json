@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/horse_haven/static/css/main.5b51d3e0.css",
-    "main.js": "/horse_haven/static/js/main.d4de4183.js",
+    "main.js": "/horse_haven/static/js/main.67791b6e.js",
     "static/js/787.434cbf80.chunk.js": "/horse_haven/static/js/787.434cbf80.chunk.js",
     "static/media/american_paint.jpg": "/horse_haven/static/media/american_paint.6b29acc7cb563876d416.jpg",
     "static/media/thoroughbred.jpg": "/horse_haven/static/media/thoroughbred.6c5f9bc0574b6da53b7f.jpg",
@@ -11,11 +11,11 @@
     "service-worker.js": "/horse_haven/service-worker.js",
     "index.html": "/horse_haven/index.html",
     "main.5b51d3e0.css.map": "/horse_haven/static/css/main.5b51d3e0.css.map",
-    "main.d4de4183.js.map": "/horse_haven/static/js/main.d4de4183.js.map",
+    "main.67791b6e.js.map": "/horse_haven/static/js/main.67791b6e.js.map",
     "787.434cbf80.chunk.js.map": "/horse_haven/static/js/787.434cbf80.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b51d3e0.css",
-    "static/js/main.d4de4183.js"
+    "static/js/main.67791b6e.js"
   ]
 }

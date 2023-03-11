@@ -21,6 +21,5 @@
   "theme_color": "#feb71c",
   "background_color": "#7a8b72",
   "display": "browser",
-  "scope": "/",
-  "start_url": "/"
+  "start_url": "."
 }
