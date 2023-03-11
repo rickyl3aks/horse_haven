@@ -1,0 +1,23 @@
+.footer {
+  margin-top: 17vh;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  color: #333;
+  background-color: #d9cba3;
+}
+
+.info {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px #ccc, -1px -1px #ccc, 1px -1px #ccc, -1px 1px #ccc;
+}
+
+@media (min-width: 850px) {
+  .footer {
+    position: fixed;
+  }
+}
