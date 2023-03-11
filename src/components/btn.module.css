@@ -1,0 +1,42 @@
+.rhombus {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  right: 0;
+  transform: rotate(45deg);
+  border: 2px solid #ccc;
+  border-top-color: #ccc;
+  border-bottom-color: #ccc;
+  border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+}
+
+.rhombus:hover {
+  cursor: pointer;
+  background-color: #7a8b72;
+}
+
+.cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 10px;
+  height: 2px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+.cross::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+  background-color: inherit;
+  border-radius: 2px;
+}

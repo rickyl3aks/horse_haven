@@ -2,18 +2,19 @@ import { useState, useEffect } from "react";
 import { BreedInfo } from "../breedInfo/BreedInfo";
 import style from "./icon.module.css";
 
-const Icon = () => {
-  const images: any = {
-    appaloosa: require("../img/appaloosa.jpg"),
-    arabian: require("../img/arabian.jpg"),
-    thoroughbred: require("../img/thoroughbred.jpg"),
-    "american paint": require("../img/american_paint.jpg"),
-  };
+const images = {
+  appaloosa: require("../img/appaloosa.jpg"),
+  arabian: require("../img/arabian.jpg"),
+  thoroughbred: require("../img/thoroughbred.jpg"),
+  "american paint": require("../img/american_paint.jpg"),
+  mustang: require("../img/mustang.jpg"),
+};
 
-  const [activeBreed, setActiveBreed] = useState<string>("");
+const Icon = () => {
+  const [activeBreed, setActiveBreed] = useState("");
 
   useEffect(() => {
-    const handleEscape = (event: KeyboardEvent) => {
+    const handleEscape = (event: any) => {
       if (event.key === "Escape") {
         setActiveBreed("");
       }
@@ -22,32 +23,29 @@ const Icon = () => {
     return () => window.removeEventListener("keydown", handleEscape);
   }, []);
 
-  const handleClick = (breed: string) => {
-    console.log(breed);
-    setActiveBreed((prevBreed) => (prevBreed === breed ? "" : breed));
+  const handleClick = (breed: any) => {
+    setActiveBreed(breed);
   };
 
-  const handleClose = () => {
-    setActiveBreed("");
+  const renderImages = () => {
+    return Object.entries(images).map(([breed, img]) => (
+      <div
+        className={style.item}
+        key={breed}
+        onClick={() => handleClick(breed)}
+      >
+        <div className={style.hovered}>
+          <img src={img} alt={breed} title={breed} className={style.img} />
+          <div className={style.text}>{breed}</div>
+        </div>
+        {activeBreed === breed && <BreedInfo breed={activeBreed} />}
+      </div>
+    ));
   };
 
   return (
     <div className={style.container}>
-      {Object.entries(images).map(([breed, img]: [string, any]) => (
-        <div
-          className={style.item}
-          key={breed}
-          onClick={() => handleClick(breed)}
-        >
-          <img src={img} alt={breed} title={breed} className={style.img} />
-          <div className={style.text}>{breed}</div>
-          {activeBreed === breed && (
-            <>
-              <BreedInfo breed={breed} onClose={handleClose} />
-            </>
-          )}
-        </div>
-      ))}
+      {renderImages()}
     </div>
   );
 };

@@ -1,48 +1,64 @@
 import style from "./breed.module.css";
 import horse from "../api/horseApi.json";
+import Btn from "../components/Btn";
+import { useState } from "react";
 
 interface HorseBreed {
   name: string;
   country: string;
   weight: string;
   body_type: string;
-  life_expectancy: number;
+  longevity: number;
 }
 
 interface BreedInfoProps {
   breed: string;
 }
 
-export const BreedInfo = ({ breed }: BreedInfoProps | any) => {
+export const BreedInfo = ({ breed }: BreedInfoProps) => {
+  const [isClose, setIsClose] = useState(true);
+
   const formattedBreed = breed.toLowerCase().replace(/\s+/g, "_");
-  const horseSelected = horse.horse_breed.find(
+  const horseSelected: any = horse.horse_breed.find(
     (item: HorseBreed) =>
       item.name.toLowerCase().replace(/\s+/g, "_") === formattedBreed
   );
 
+  const formatStringForDisplay = (string: string) => {
+    const stringWithSpaces = string.replace(/_/g, " ");
+    return stringWithSpaces.charAt(0).toUpperCase() + stringWithSpaces.slice(1);
+  };
+
   const renderHorseInfo = (title: string, value: string | number) => (
     <div className={style.container}>
       <p className={style.title}>{title}: </p>
-      <p>{value}</p>
+      <p>{typeof value === "string" ? formatStringForDisplay(value) : value}</p>
     </div>
   );
 
   return (
     <>
-      {horseSelected && (
+      {horseSelected && isClose && (
         <div className={style.overlay}>
           <div className={style.popup}>
-            {renderHorseInfo("Name", horseSelected.name)}
-            <hr />
-            {renderHorseInfo("Country", horseSelected.country)}
-            <hr />
-            {renderHorseInfo("Weight", horseSelected.weight)}
-            <hr />
-            {renderHorseInfo("Body type", horseSelected.body_type)}
-            <hr />
-            {renderHorseInfo("Life Expectancy", horseSelected.life_expectancy)}
-            <hr />
-            {renderHorseInfo("Personality", horseSelected.personality)}
+            <div onClick={() => setIsClose(!true)}>
+              <Btn />
+            </div>
+            <br />
+            <br />
+            {Object.keys(horseSelected)
+              .filter(
+                (prop) => prop !== "id" && prop !== "colour" && prop !== "img"
+              )
+              .map((prop: any, idx: number) => (
+                <div key={prop}>
+                  {idx > 0 && <hr />}
+                  {renderHorseInfo(
+                    formatStringForDisplay(prop),
+                    horseSelected[prop]
+                  )}
+                </div>
+              ))}
           </div>
         </div>
       )}
