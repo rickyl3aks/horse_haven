@@ -20,6 +20,7 @@
   ],
   "theme_color": "#feb71c",
   "background_color": "#7a8b72",
-  "display": "browser",
+  "display": "standalone",
+  "orientation": "portrait",
   "start_url": "."
 }
