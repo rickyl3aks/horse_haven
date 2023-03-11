@@ -7,14 +7,14 @@
       "country": "United States 🇺🇸",
       "weight": "14.2 hands to 16 hands",
       "body_type": "Compact, muscular build",
-      "life_expectancy": 30,
+      "longevity": 30,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
         "Leopard": ["#ebe9e4", "#30302f"],
         "Snowflake": ["#ebe9e4", "#30302f"],
         "Marble/Varnish": ["#ebe9e4", "#30302f"]
       },
-      "personality": "The Appaloosa is independent, intelligent, and courageous. It can also be fierce -- making it an ideal war horse in the past. Currently, it is considered one of the best riding horses, especially for those who know how to handle horses."
+      "personality": "Appaloosas are friendly, curious, and adaptable horses. They are intelligent, easy to train, and suitable for riders of all levels. Appaloosas are people-oriented, forming strong bonds with their owners, and are popular for trail riding, ranch work, and rodeo events"
     },
     {
       "id": 2,
@@ -23,14 +23,14 @@
       "country": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "weight": "15 hands (60 inches) to 17 hands (68 inches)",
       "body_type": "Deep chest; lean, athletic build; long neck; powerful hindquarters",
-      "life_expectancy": 25,
+      "longevity": 25,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
         "Leopard": ["#ebe9e4", "#30302f"],
         "Snowflake": ["#ebe9e4", "#30302f"],
         "Marble/Varnish": ["#ebe9e4", "#30302f"]
       },
-      "personality": "As a breed, Thoroughbred horses are intelligent and energetic, with a strong work ethic. They can also be bold and spirited, making them better suited to a more experienced equestrian rather than a beginner."
+      "personality": "The Thoroughbred horse is known for its athleticism, speed, and courage. They are intelligent and curious, with a strong desire to learn and please their handlers. They can be high-spirited and energetic, but are also affectionate and loyal companions"
     },
     {
       "id": 3,
@@ -39,14 +39,14 @@
       "country": "Arabian peninsula 🇦🇪",
       "weight": "14.1 to 15.1 hands",
       "body_type": "Lithe, compact body; small, wedge-shaped head; dished facial profile, long, arched neck",
-      "life_expectancy": 25,
+      "longevity": 25,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
         "Leopard": ["#ebe9e4", "#30302f"],
         "Snowflake": ["#ebe9e4", "#30302f"],
         "Marble/Varnish": ["#ebe9e4", "#30302f"]
       },
-      "personality": "The Arab is very intelligent. A quick learner with high spirits, it makes for a great riding horse. However, the Arab has been known to become aggressive if and when it is mistreated by its handler."
+      "personality": "The Arabian horse is known for its intelligence, sensitivity, and loyalty. They are quick learners and form strong bonds with their owners. They can be high-spirited, but are also gentle and affectionate"
     },
     {
       "id": 4,
@@ -55,14 +55,30 @@
       "country": "United States 🇺🇸",
       "weight": "14 hands to 16 hands",
       "body_type": "Strong, well-balanced body; colorful coat patterns; powerful hindquarters",
-      "life_expectancy": 30,
+      "longevity": 30,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
         "Leopard": ["#ebe9e4", "#30302f"],
         "Snowflake": ["#ebe9e4", "#30302f"],
         "Marble/Varnish": ["#ebe9e4", "#30302f"]
       },
-      "personality": "Beyond their beauty, paints are prized for their friendly, easygoing temperament. These are relaxed and highly social horses with natural intelligence that makes them unchallenging and rewarding to train."
+      "personality": "The American Paint horse is known for its intelligence, versatility, and gentle disposition. They are athletic and excel in a variety of disciplines, including Western and English riding, rodeo events, and trail riding. They are easy to train and form strong bonds with their owners. They are also known for their striking coat patterns, which make them stand out in a crowd"
+    },
+    {
+      "id": 5,
+      "name": "mustang",
+      "img": "../img/mustang.jpeg",
+      "country": "United States 🇺🇸",
+      "weight": "13 hands to 15 hands",
+      "body_type": "mall to medium-sized horses with strong legs and hooves, deep chests, and muscular bodies",
+      "longevity": 30,
+      "colour": {
+        "Bay": ["#804000", "#A52A2A"],
+        "Black": ["#0B0B0B", "#1C1C1C"],
+        "Chestnut": ["#CD5C5C", "#D2691E"],
+        "Gray": ["#808080", "#555555"]
+      },
+      "personality": "Mustangs are known for their intelligence, hardiness, and endurance. They are highly adaptable and social animals, with a strong herd instinct. They can be independent and have a free-spirited nature"
     }
   ]
 }

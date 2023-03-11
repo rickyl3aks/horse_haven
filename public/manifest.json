@@ -1,6 +1,6 @@
 {
-  "short_name": "Horse app",
-  "name": "Horse App",
+  "short_name": "Horse Haven",
+  "name": "Horse Haven",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +19,7 @@
     }
   ],
   "theme_color": "#feb71c",
-  "background_color": "#feb71c",
+  "background_color": "#7a8b72",
   "display": "browser",
   "scope": "/",
   "start_url": "/"
