@@ -3,9 +3,8 @@
     {
       "id": 1,
       "name": "appaloosa",
-      "img": "../img/appaloosa.png",
       "country": "United States 🇺🇸",
-      "weight": "14.2 hands to 16 hands",
+      "weight": "430 to 570 kg",
       "body_type": "Compact, muscular build",
       "longevity": 30,
       "colour": {
@@ -19,9 +18,8 @@
     {
       "id": 2,
       "name": "thoroughbred",
-      "img": "../img/thoroughbred.jpg",
       "country": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-      "weight": "15 hands (60 inches) to 17 hands (68 inches)",
+      "weight": "450 kg",
       "body_type": "Deep chest; lean, athletic build; long neck; powerful hindquarters",
       "longevity": 25,
       "colour": {
@@ -35,9 +33,8 @@
     {
       "id": 3,
       "name": "arabian",
-      "img": "../img/arabian.jpeg",
       "country": "Arabian peninsula 🇦🇪",
-      "weight": "14.1 to 15.1 hands",
+      "weight": "360 to 450 kg",
       "body_type": "Lithe, compact body; small, wedge-shaped head; dished facial profile, long, arched neck",
       "longevity": 25,
       "colour": {
@@ -51,9 +48,8 @@
     {
       "id": 4,
       "name": "american paint",
-      "img": "../img/american_paint.jpeg",
       "country": "United States 🇺🇸",
-      "weight": "14 hands to 16 hands",
+      "weight": "408 to 544 kg",
       "body_type": "Strong, well-balanced body; colorful coat patterns; powerful hindquarters",
       "longevity": 30,
       "colour": {
@@ -67,9 +63,8 @@
     {
       "id": 5,
       "name": "mustang",
-      "img": "../img/mustang.jpeg",
       "country": "United States 🇺🇸",
-      "weight": "13 hands to 15 hands",
+      "weight": "360 to 450 kg",
       "body_type": "mall to medium-sized horses with strong legs and hooves, deep chests, and muscular bodies",
       "longevity": 30,
       "colour": {
@@ -79,6 +74,21 @@
         "Gray": ["#808080", "#555555"]
       },
       "personality": "Mustangs are known for their intelligence, hardiness, and endurance. They are highly adaptable and social animals, with a strong herd instinct. They can be independent and have a free-spirited nature"
+    },
+    {
+      "id": 6,
+      "name": "andalusian",
+      "country": "Spain 🇪🇸",
+      "weight": "408 to 545 kg",
+      "body_type": "compact, muscular build, a short neck, a broad chest, and strong, sturdy legs",
+      "longevity": 30,
+      "colour": {
+        "Bay": ["#804000", "#A52A2A"],
+        "Black": ["#0B0B0B", "#1C1C1C"],
+        "Chestnut": ["#CD5C5C", "#D2691E"],
+        "Gray": ["#808080", "#555555"]
+      },
+      "personality": "The Andalusian horse is known for its intelligence, sensitivity, and courage, making it a popular choice for dressage and other high-level competitions. They are loyal, affectionate, and often have a calm and gentle demeanor, but can also be fiery and energetic when needed"
     }
   ]
 }
