@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/horse_haven/static/css/main.5b51d3e0.css",
-    "main.js": "/horse_haven/static/js/main.67791b6e.js",
+    "main.css": "/horse_haven/static/css/main.c2c0cf14.css",
+    "main.js": "/horse_haven/static/js/main.ec0f8626.js",
     "static/js/787.434cbf80.chunk.js": "/horse_haven/static/js/787.434cbf80.chunk.js",
     "static/media/american_paint.jpg": "/horse_haven/static/media/american_paint.6b29acc7cb563876d416.jpg",
     "static/media/thoroughbred.jpg": "/horse_haven/static/media/thoroughbred.6c5f9bc0574b6da53b7f.jpg",
     "static/media/arabian.jpg": "/horse_haven/static/media/arabian.652d4cb8e0210a5e6fdd.jpg",
     "static/media/appaloosa.jpg": "/horse_haven/static/media/appaloosa.34851636316cab6df8e5.jpg",
     "static/media/mustang.jpg": "/horse_haven/static/media/mustang.23bfcd423d93eee0ef56.jpg",
+    "static/media/andalusian.jpg": "/horse_haven/static/media/andalusian.3be6b05402c6a89e8cdc.jpg",
     "service-worker.js": "/horse_haven/service-worker.js",
     "index.html": "/horse_haven/index.html",
-    "main.5b51d3e0.css.map": "/horse_haven/static/css/main.5b51d3e0.css.map",
-    "main.67791b6e.js.map": "/horse_haven/static/js/main.67791b6e.js.map",
+    "main.c2c0cf14.css.map": "/horse_haven/static/css/main.c2c0cf14.css.map",
+    "main.ec0f8626.js.map": "/horse_haven/static/js/main.ec0f8626.js.map",
     "787.434cbf80.chunk.js.map": "/horse_haven/static/js/787.434cbf80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b51d3e0.css",
-    "static/js/main.67791b6e.js"
+    "static/css/main.c2c0cf14.css",
+    "static/js/main.ec0f8626.js"
   ]
 }
