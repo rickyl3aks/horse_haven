@@ -15,7 +15,7 @@ root.render(
   <React.StrictMode>
     <Header />
     <Icon />
-    <Footer />
+    {/* <Footer /> */}
   </React.StrictMode>
 );
 serviceWorkerRegistration.register();

@@ -1,7 +1,7 @@
+import { useState } from "react";
 import style from "./breed.module.css";
 import horse from "../api/horseApi.json";
 import Btn from "../components/Btn";
-import { useState } from "react";
 
 interface HorseBreed {
   name: string;
@@ -17,6 +17,8 @@ interface BreedInfoProps {
 
 export const BreedInfo = ({ breed }: BreedInfoProps) => {
   const [isClose, setIsClose] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
+
 
   const formattedBreed = breed.toLowerCase().replace(/\s+/g, "_");
   const horseSelected: any = horse.horse_breed.find(
@@ -29,12 +31,38 @@ export const BreedInfo = ({ breed }: BreedInfoProps) => {
     return stringWithSpaces.charAt(0).toUpperCase() + stringWithSpaces.slice(1);
   };
 
-  const renderHorseInfo = (title: string, value: string | number) => (
-    <div className={style.container}>
-      <p className={style.title}>{title}: </p>
-      <p>{typeof value === "string" ? formatStringForDisplay(value) : value}</p>
-    </div>
-  );
+  const renderHorseInfo = (title: string, value: string | number) => {
+    const isString = typeof value === "string";
+    const valueWords = isString ? value.split(" ") : [];
+    const shouldInfoExpand = isString && valueWords.length > 18 && !isExpanded;
+
+    return (
+      <div className={style.container}>
+        <p className={style.title}>{title}: </p>
+        <p>
+          {shouldInfoExpand ? (
+            <>
+              {valueWords.slice(0, 7).join(" ")} ...
+              <span
+                className={style.expand}
+                onClick={() => setIsExpanded(true)}
+              ></span>
+            </>
+          ) : (
+            <>
+              {isString ? formatStringForDisplay(value) : value.toString()}
+              {isExpanded && valueWords.length > 18 && (
+                <span
+                  className={style.collapse}
+                  onClick={() => setIsExpanded(false)}
+                ></span>
+              )}
+            </>
+          )}
+        </p>
+      </div>
+    );
+  };
 
   return (
     <>

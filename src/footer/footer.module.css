@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 17vh;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -16,8 +16,8 @@
   text-shadow: 1px 1px #ccc, -1px -1px #ccc, 1px -1px #ccc, -1px 1px #ccc;
 }
 
-@media (min-width: 850px) {
+@media (max-width: 800px) {
   .footer {
-    position: fixed;
+    bottom: 0;
   }
 }
