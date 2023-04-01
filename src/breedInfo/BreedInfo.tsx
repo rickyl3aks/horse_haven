@@ -67,18 +67,23 @@ export const BreedInfo = ({ breed }: BreedInfoProps) => {
   return (
     <>
       {horseSelected && isClose && (
-        <div className={style.overlay}>
+        <div
+          className={style.overlay}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setIsClose(false);
+            }
+          }}
+        >
           <div className={style.popup}>
-            <div onClick={() => setIsClose(!true)}>
+            <div onClick={() => setIsClose(false)}>
               <Btn />
             </div>
             <br />
             <br />
             {Object.keys(horseSelected)
-              .filter(
-                (prop) => prop !== "id" && prop !== "colour" && prop !== "img"
-              )
-              .map((prop: any, idx: number) => (
+              .filter((prop) => !["id", "colour", "img"].includes(prop))
+              .map((prop, idx) => (
                 <div key={prop}>
                   {idx > 0 && <hr />}
                   {renderHorseInfo(

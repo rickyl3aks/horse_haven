@@ -1,26 +1,30 @@
 .popup {
   position: fixed;
   top: 50%;
-  padding: 2rem 2rem 3rem;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #f7f7f7;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
   border-radius: 1rem;
   z-index: 1000;
   max-height: 85vh;
   overflow-y: auto;
   width: 80%;
   max-width: 800px;
+  padding: 2rem;
+  padding-bottom: 3rem;
 }
 
 .popup h2 {
   color: #222;
+  font-size: 2rem;
 }
 
 .popup p {
   color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
 }
 
 .popup:hover {
@@ -35,16 +39,6 @@
   height: 100%;
   backdrop-filter: blur(5px);
   z-index: 999;
-}
-
-.popup h2 {
-  font-size: 2rem;
-}
-
-.popup p {
-  font-size: 1rem;
-  line-height: 1.5;
-  width: 100%;
 }
 
 .title {
@@ -65,69 +59,72 @@ hr {
   background-image: linear-gradient(to right, #e8e8e8, #ccc, #e8e8e8);
 }
 
-.expand {
-  cursor: pointer;
-  display: inline-block;
-  margin-left: 10px;
-  margin-bottom: 3px;
-  width: 8px;
-  height: 8px;
-  border: solid #444;
-  border-width: 0 2px 2px 0;
-  transform: rotate(43deg);
-  transition: transform 0.5s ease-in-out ;
-}
-
+.expand,
 .collapse {
   cursor: pointer;
   display: inline-block;
   margin-left: 10px;
-  margin-top: 10px;
   width: 8px;
   height: 8px;
   border: solid #444;
   border-width: 0 2px 2px 0;
-  transform: rotate(-135deg);
   transition: transform 0.5s ease-in-out;
 }
 
-
-@keyframes expand {
-  0% {
-    transform: rotate(-135deg);
-  }
-  25% {
-    transform: rotate(-90deg);
-  }
-  50% {
-    transform: rotate(-45deg);
-  }
-  75% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(43deg);
-  }
+.expand {
+  margin-bottom: 3px;
+  transform: rotate(45deg);
 }
 
-@keyframes collapse {
-  0% {
-    transform: rotate(43deg);
-  }
-  25% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-45deg);
-  }
-  75% {
-    transform: rotate(-90deg);
-  }
-  100% {
-    transform: rotate(-135deg);
-  }
+.collapse {
+  margin-top: 10px;
+  transform: rotate(-135deg);
+}
+
+.expand:hover {
+  animation: expand 0.25s ease-in-out forwards;
+}
+
+.collapse:hover {
+  animation: collaps 0.25s ease-in-out forwards;
 }
 
 .invisible {
   display: none;
+}
+
+@keyframes collaps {
+  0% {
+    transform: rotate(-135deg);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(43deg);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: rotate(43deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  75% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-135deg);
+  }
 }
