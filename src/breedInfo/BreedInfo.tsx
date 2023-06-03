@@ -31,7 +31,7 @@ export const BreedInfo = ({ breed }: BreedInfoProps) => {
     return stringWithSpaces.charAt(0).toUpperCase() + stringWithSpaces.slice(1);
   };
 
-  const renderHorseInfo = (title: string, value: string | number) => {
+  const renderHorseInfo = (title: string, value: string | number | any) => {
     const isString = typeof value === "string";
     const valueWords = isString ? value.split(" ") : [];
     const shouldInfoExpand = isString && valueWords.length > 18 && !isExpanded;
@@ -39,7 +39,7 @@ export const BreedInfo = ({ breed }: BreedInfoProps) => {
     return (
       <div className={style.container}>
         <p className={style.title}>{title}: </p>
-        <p>
+        <div className={style.info}>
           {shouldInfoExpand ? (
             <>
               {valueWords.slice(0, 7).join(" ")} ...
@@ -50,7 +50,43 @@ export const BreedInfo = ({ breed }: BreedInfoProps) => {
             </>
           ) : (
             <>
-              {isString ? formatStringForDisplay(value) : value.toString()}
+              {isString
+                ? formatStringForDisplay(value)
+                : typeof value === "object"
+                ? Object.keys(value).map((key: string, index: number) => {
+                    const propertyValue = value[key];
+                    let colour: any[] = [];
+                    if (Array.isArray(propertyValue)) {
+                      const elements = [];
+                      for (const element of propertyValue) {
+                        elements.push(element);
+                      }
+                      colour.push({ [key]: elements });
+                    } else {
+                      colour.push({ [key]: propertyValue });
+                    }
+                    return (
+                      <div key={index}>
+                        <span>{key}: </span>
+                        {colour.map((item: any, index: number) =>
+                          item[Object.keys(item)[0]].map((colour: string) => {
+                            return (
+                              <div
+                                key={colour + index}
+                                style={{
+                                  display: "inline-block",
+                                  width: "1rem",
+                                  height: "1rem",
+                                  backgroundColor: `${colour}`,
+                                }}
+                              ></div>
+                            );
+                          })
+                        )}
+                      </div>
+                    );
+                  })
+                : value.toString()}
               {isExpanded && valueWords.length > 18 && (
                 <span
                   className={style.collapse}
@@ -59,7 +95,7 @@ export const BreedInfo = ({ breed }: BreedInfoProps) => {
               )}
             </>
           )}
-        </p>
+        </div>
       </div>
     );
   };
@@ -82,7 +118,7 @@ export const BreedInfo = ({ breed }: BreedInfoProps) => {
             <br />
             <br />
             {Object.keys(horseSelected)
-              .filter((prop) => !["id", "colour", "img"].includes(prop))
+              .filter((prop) => !["id", "img"].includes(prop))
               .map((prop, idx) => (
                 <div key={prop}>
                   {idx > 0 && <hr />}
