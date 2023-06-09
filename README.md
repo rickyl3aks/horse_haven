@@ -1,13 +1,9 @@
-<h1>Horse haven 🐴</h1>
-<h5>Horse breed information</h5>
+# Horse haven 🐴
 
-<p>Explore a wide range of horse breeds and access detailed information when a user interacts with a specific breed.</p>
+Explore a wide range of horse breeds and access detailed information by selecting an image of a particular breed.
 
-<h2>Technology Used</h2>
-<ul>
-<li>React v18.2.0</li>
-</ul>
+### Technology Used
 
-<hr/>
+- React v18.2.0
 
-The images used on this website are from <a href="https://pixabay.com/" target="_blank">Pixabay</a>
+> The website uses images from [Pixabay](https://pixabay.com/) and [Wikimedia](https://commons.wikimedia.org/wiki/Main_Page) for its visuals.
