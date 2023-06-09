@@ -6,6 +6,7 @@
       "country": "United States 🇺🇸",
       "weight": "430 to 570 kg",
       "body_type": "Compact, muscular build",
+      "image": "appaloosa",
       "longevity": 30,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
@@ -21,6 +22,7 @@
       "country": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "weight": "450 kg",
       "body_type": "Deep chest; lean, athletic build; long neck; powerful hindquarters",
+      "image": "thoroughbred",
       "longevity": 25,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
@@ -36,6 +38,7 @@
       "country": "Arabian peninsula 🇦🇪",
       "weight": "360 to 450 kg",
       "body_type": "Lithe, compact body; small, wedge-shaped head; dished facial profile, long, arched neck",
+      "image": "arabian",
       "longevity": 25,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
@@ -51,6 +54,7 @@
       "country": "United States 🇺🇸",
       "weight": "408 to 544 kg",
       "body_type": "Strong, well-balanced body; colorful coat patterns; powerful hindquarters",
+      "image": "american paint",
       "longevity": 30,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
@@ -66,6 +70,7 @@
       "country": "United States 🇺🇸",
       "weight": "360 to 450 kg",
       "body_type": "mall to medium-sized horses with strong legs and hooves, deep chests, and muscular bodies",
+      "image": "mustang",
       "longevity": 30,
       "colour": {
         "Bay": ["#804000", "#A52A2A"],
@@ -81,6 +86,7 @@
       "country": "Spain 🇪🇸",
       "weight": "408 to 545 kg",
       "body_type": "compact, muscular build, a short neck, a broad chest, and strong, sturdy legs",
+      "image": "andalusian",
       "longevity": 30,
       "colour": {
         "Bay": ["#804000", "#A52A2A"],
@@ -96,6 +102,7 @@
       "country": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "weight": "816 to 998 kg",
       "body_type": "strong shoulder, sturdy legs, long, thick mane and tail, gentle temperament",
+      "image": "shire",
       "longevity": 30,
       "colour": {
         "Bay": ["#804000", "#A52A2A"],
@@ -104,6 +111,38 @@
         "Gray": ["#808080", "#555555"]
       },
       "personality": "The Shire horse is a gentle giant breed that is known for their calm and docile nature. They have a kind and willing temperament, and they are easy to work with. They are patient, intelligent, and loyal animals that are often used for agricultural work, driving, and even therapy. Shire horses are typically friendly and affectionate towards people, and they enjoy human interaction. They are also known for their strong work ethic and willingness to please. These horses are very adaptable and can be trained for a variety of tasks. Despite their size, Shire horses are known for their gentle and easy-going personalities"
+    },
+    {
+      "id": 8,
+      "name": "nokota",
+      "country": "United States 🇺🇸",
+      "weight": "410 to 545 kg",
+      "body_type": "sturdy, athleticism, endurance, agile build",
+      "image": "nokota",
+      "longevity": 30,
+      "colour": {
+        "Black": ["#0B0B0B", "#1C1C1C"],
+        "Chestnut": ["#CD5C5C", "#D2691E"],
+        "Gray": ["#808080", "#555555"]
+      },
+      "personality": "Nokota horses are known for their intelligence, curiosity, and independence. They are often described as being alert, spirited, and adaptable. Due to their wild heritage and strong instincts, they can possess a natural \"wild\" or untamed spirit, which can make them challenging to train for inexperienced handlers. However, with the right training and handling techniques, Nokota horses can become loyal and reliable partners"
+    },
+    {
+      "id": 9,
+      "name": "brumby",
+      "country": "Australia 🇦🇺",
+      "weight": "320 to 450 kg",
+      "body_type": "sturdy, compact build, strong legs",
+      "image": "brumby",
+      "longevity": 30,
+      "colour": {
+        "Chestnut": ["#CD5C5C", "#D2691E"],
+        "Black": ["#0B0B0B", "#1C1C1C"],
+        "Gray": ["#808080", "#555555"],
+        "Palomino": ["#E2B770", "#CDBA96"],
+        "Buckskin": ["#D2B48C", "#F0E8D0"]
+      },
+      "personality": "Brumbies are known for their intelligence, resilience, and independent nature. They have adapted to survive in the harsh Australian wilderness, which has shaped their behavior. Brumbies can be wary of humans due to their wild origins, but with patient and consistent training, they can develop a bond with their handlers. They are known for their surefootedness and are often valued as trail or endurance horses. Brumbies can display a range of temperaments, with some individuals being more spirited and others more docile, depending on their individual upbringing and experiences."
     }
   ]
 }
