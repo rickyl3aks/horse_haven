@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
 
+:root {
+  --button-hover: #7a8b72;
+  --border-colour: #ccc;
+}
+
 * {
   margin: 0;
   padding: 0;

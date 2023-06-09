@@ -7,17 +7,20 @@
   margin-top: 1rem;
   right: 0;
   transform: rotate(45deg);
-  border: 2px solid #ccc;
-  border-top-color: #ccc;
-  border-bottom-color: #ccc;
+  border: 2px solid var(--border-colour);
+  border-top-color: var(--border-colour);
+  border-bottom-color: var(--border-colour);
   border-radius: 4px;
-    transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
 
+.rhombus {
+  background-color: rgba(37, 37, 37, 0.8);
 }
 
 .rhombus:hover {
   cursor: pointer;
-  background-color: #7a8b72;
+  background-color: var(--button-hover);
 }
 
 .cross {

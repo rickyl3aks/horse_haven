@@ -1,8 +1,8 @@
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  margin-top: 3rem;
-  grid-gap: 20px;
+  margin: 3rem 1.5rem 3rem;
+  grid-gap: 1.5rem;
   justify-items: center;
 }
 
@@ -37,7 +37,6 @@
   opacity: 1;
 }
 
-.item:hover img {
+.item:hover .img {
   opacity: 0.5;
 }
-
