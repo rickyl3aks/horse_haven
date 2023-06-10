@@ -1,25 +1,38 @@
 {
   "files": {
-    "main.css": "/horse_haven/static/css/main.1c8a247b.css",
-    "main.js": "/horse_haven/static/js/main.4a99ce73.js",
+    "main.css": "/horse_haven/static/css/main.117add0c.css",
+    "main.js": "/horse_haven/static/js/main.a118da15.js",
     "static/js/787.434cbf80.chunk.js": "/horse_haven/static/js/787.434cbf80.chunk.js",
     "static/media/american_paint.jpg": "/horse_haven/static/media/american_paint.6b29acc7cb563876d416.jpg",
+    "static/media/mustang2.jpg": "/horse_haven/static/media/mustang2.d5ed3e6b52f11499483d.jpg",
     "static/media/shire.jpg": "/horse_haven/static/media/shire.e1fc50f89c2c3786851b.jpg",
+    "static/media/appaloosa3.jpg": "/horse_haven/static/media/appaloosa3.22e2cee7edf0c79aec7c.jpg",
+    "static/media/arabian2.jpg": "/horse_haven/static/media/arabian2.5608e63ac2e8481b2898.jpg",
+    "static/media/thoroughbred2.jpg": "/horse_haven/static/media/thoroughbred2.22d0383312ec812e70f1.jpg",
     "static/media/thoroughbred.jpg": "/horse_haven/static/media/thoroughbred.6c5f9bc0574b6da53b7f.jpg",
     "static/media/arabian.jpg": "/horse_haven/static/media/arabian.652d4cb8e0210a5e6fdd.jpg",
+    "static/media/arabian3.jpg": "/horse_haven/static/media/arabian3.6b1262169022ef2e98be.jpg",
+    "static/media/american_paint3.jpg": "/horse_haven/static/media/american_paint3.f75ae428bd7d600004e5.jpg",
     "static/media/appaloosa.jpg": "/horse_haven/static/media/appaloosa.34851636316cab6df8e5.jpg",
     "static/media/mustang.jpg": "/horse_haven/static/media/mustang.23bfcd423d93eee0ef56.jpg",
     "static/media/andalusian.jpg": "/horse_haven/static/media/andalusian.3be6b05402c6a89e8cdc.jpg",
+    "static/media/brumby2.jpg": "/horse_haven/static/media/brumby2.9198150a3d5a5cee6574.jpg",
+    "static/media/brumby3.jpg": "/horse_haven/static/media/brumby3.e238542be36c9f2722be.jpg",
     "static/media/brumby.jpg": "/horse_haven/static/media/brumby.0a14016aa5c353709b19.jpg",
+    "static/media/american_paint2.jpg": "/horse_haven/static/media/american_paint2.1c1a28dca3b01a695318.jpg",
+    "static/media/appaloosa2.jpg": "/horse_haven/static/media/appaloosa2.5981367d6e3e8bbbc5c5.jpg",
+    "static/media/mustang3.jpg": "/horse_haven/static/media/mustang3.a89e0bdea5de127cbb2f.jpg",
     "static/media/nokota.jpg": "/horse_haven/static/media/nokota.d5dbf41d9b44bca93349.jpg",
     "service-worker.js": "/horse_haven/service-worker.js",
+    "static/media/appaloosa4.jpg": "/horse_haven/static/media/appaloosa4.29b34fdff1c66db0b819.jpg",
+    "static/media/thoroughbred3.jpg": "/horse_haven/static/media/thoroughbred3.d7013fa3da34009ee1de.jpg",
     "index.html": "/horse_haven/index.html",
-    "main.1c8a247b.css.map": "/horse_haven/static/css/main.1c8a247b.css.map",
-    "main.4a99ce73.js.map": "/horse_haven/static/js/main.4a99ce73.js.map",
+    "main.117add0c.css.map": "/horse_haven/static/css/main.117add0c.css.map",
+    "main.a118da15.js.map": "/horse_haven/static/js/main.a118da15.js.map",
     "787.434cbf80.chunk.js.map": "/horse_haven/static/js/787.434cbf80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c8a247b.css",
-    "static/js/main.4a99ce73.js"
+    "static/css/main.117add0c.css",
+    "static/js/main.a118da15.js"
   ]
 }
