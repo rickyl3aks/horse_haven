@@ -3,6 +3,8 @@
 :root {
   --button-hover: #7a8b72;
   --border-colour: #ccc;
+  --border-colour-opacity: rgba(204, 204, 204, 0.8);
+  --button-hover-opacity: rgba(122, 139, 114, 0.8);
 }
 
 * {

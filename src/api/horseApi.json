@@ -6,7 +6,12 @@
       "country": "United States 🇺🇸",
       "weight": "430 to 570 kg",
       "body_type": "Compact, muscular build",
-      "image": "appaloosa",
+      "image": [
+        { "source": "appaloosa", "description": "appaloosa" },
+        { "source": "appaloosa2", "description": "appaloosa rearing" },
+        { "source": "appaloosa3", "description": "appaloosa meadow" },
+        { "source": "appaloosa4", "description": "appaloosa" }
+      ],
       "longevity": 30,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
@@ -22,7 +27,11 @@
       "country": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "weight": "450 kg",
       "body_type": "Deep chest; lean, athletic build; long neck; powerful hindquarters",
-      "image": "thoroughbred",
+      "image": [
+        { "source": "thoroughbred", "description": "thoroughbred" },
+        { "source": "thoroughbred2", "description": "walking thoroughbred" },
+        { "source": "thoroughbred3", "description": "brown thoroughbred" }
+      ],
       "longevity": 25,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
@@ -38,12 +47,17 @@
       "country": "Arabian peninsula 🇦🇪",
       "weight": "360 to 450 kg",
       "body_type": "Lithe, compact body; small, wedge-shaped head; dished facial profile, long, arched neck",
-      "image": "arabian",
+      "image": [
+        { "source": "arabian", "description": "arabian" },
+        { "source": "arabian2", "description": "equines arabian" },
+        { "source": "arabian3", "description": "chestnut arabian" }
+      ],
       "longevity": 25,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
         "Leopard": ["#ebe9e4", "#30302f"],
         "Snowflake": ["#ebe9e4", "#30302f"],
+        "Chestnut": ["#CD5C5C", "#D2691E"],
         "Marble/Varnish": ["#ebe9e4", "#30302f"]
       },
       "personality": "The Arabian horse is known for its intelligence, sensitivity, and loyalty. They are quick learners and form strong bonds with their owners. They can be high-spirited, but are also gentle and affectionate"
@@ -54,7 +68,11 @@
       "country": "United States 🇺🇸",
       "weight": "408 to 544 kg",
       "body_type": "Strong, well-balanced body; colorful coat patterns; powerful hindquarters",
-      "image": "american paint",
+      "image": [
+        { "source": "american paint", "description": "american paint" },
+        { "source": "american paint2", "description": "american paint meadow" },
+        { "source": "american paint3", "description": "american paint" }
+      ],
       "longevity": 30,
       "colour": {
         "Blanket": ["#ebe9e4", "#30302f"],
@@ -70,7 +88,14 @@
       "country": "United States 🇺🇸",
       "weight": "360 to 450 kg",
       "body_type": "mall to medium-sized horses with strong legs and hooves, deep chests, and muscular bodies",
-      "image": "mustang",
+      "image": [
+        { "source": "mustang", "description": "wild mustang" },
+        {
+          "source": "mustang2",
+          "description": "female and male wild mustangs"
+        },
+        { "source": "mustang3", "description": "wild mustang" }
+      ],
       "longevity": 30,
       "colour": {
         "Bay": ["#804000", "#A52A2A"],
@@ -133,7 +158,11 @@
       "country": "Australia 🇦🇺",
       "weight": "320 to 450 kg",
       "body_type": "sturdy, compact build, strong legs",
-      "image": "brumby",
+      "image": [
+        { "source": "brumby", "description": "Brumby" },
+        { "source": "brumby2", "description": "Brumbys" },
+        { "source": "brumby3", "description": "Perlino Brumby" }
+      ],
       "longevity": 30,
       "colour": {
         "Chestnut": ["#CD5C5C", "#D2691E"],
