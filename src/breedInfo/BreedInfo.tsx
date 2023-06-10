@@ -36,7 +36,9 @@ export const BreedInfo = ({ breed }: BreedInfoProps) => {
     value: string | number | any,
     horseName: string
   ) => {
-    const imgSrc = require(`../img/${horseName.replace(/ /g, "_")}.jpg`);
+    const imgSrc = Array.isArray(horseName)
+      ? horseName.map((name) => { return require(`../img/${name.source.replace(/ /g, "_")}.jpg`) })
+      : require(`../img/${horseName.replace(/ /g, "_")}.jpg`);
     const isString = typeof value === "string";
     const valueWords = isString ? value.split(" ") : [];
     const shouldInfoExpand = isString && valueWords.length > 18 && !isExpanded;
