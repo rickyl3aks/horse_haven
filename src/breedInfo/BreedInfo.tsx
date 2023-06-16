@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./breed.module.css";
 import horse from "../api/horseApi.json";
 import Btn from "../components/Btn";
@@ -17,8 +17,20 @@ interface BreedInfoProps {
 }
 
 export const BreedInfo = ({ breed }: BreedInfoProps) => {
-  const [isClose, setIsClose] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
   const [isExpanded, setIsExpanded] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+        document.body.style.overflow = "visible";
+      }
+    };
+
+    document.body.style.overflow = isOpen ? "hidden" : "visible";
+    document.addEventListener("keydown", handleKeyDown);
+  }, [isOpen]);
 
   const formattedBreed = breed.toLowerCase().replace(/\s+/g, "_");
   const horseSelected: any = horse.horse_breed.find(
@@ -113,17 +125,17 @@ export const BreedInfo = ({ breed }: BreedInfoProps) => {
 
   return (
     <>
-      {horseSelected && isClose && (
+      {horseSelected && isOpen && (
         <div
           className={style.overlay}
           onClick={(e) => {
             if (e.target === e.currentTarget) {
-              setIsClose(false);
+              setIsOpen(false);
             }
           }}
         >
           <div className={style.popup}>
-            <div onClick={() => setIsClose(false)}>
+            <div onClick={() => setIsOpen(false)}>
               <Btn />
             </div>
             <br />

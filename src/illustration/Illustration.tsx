@@ -33,8 +33,6 @@ const Illustration = ({
     );
   };
 
-  console.log(source);
-
   return (
     <div>
       {typeof source === "object" ? (
